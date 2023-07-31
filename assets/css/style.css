@@ -1,0 +1,93 @@
+body
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+/* -----------------------------------------------------------------------------NAVIGATION-*/
+
+nav 
+    {   
+        color: #fafafa;
+        background-color: rgba(0,0,0,0.2);
+        position: fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        z-index: 1;
+        padding: 10px 30px;
+    }
+
+nav a
+    {
+        color: #fafafa;
+        text-decoration: none;
+    }
+
+nav a:hover
+    {
+        text-decoration: underline;
+    }
+
+/* -----------------------------------------------------------------------------HERO IMAGE | BRANDING */
+
+.hero-image
+    {   
+        background-image: url("../images/hero-image.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        background-color: #fafafa;
+        height: 100vh;
+    }
+
+.hero-text
+    {   
+        position: relative;
+        color: white;
+        height: 100%;
+
+    }
+
+#hero-welcome-text
+    {   
+        position: absolute; 
+        left:10%;
+        top:70%;
+    }
+
+#hero-caption
+    {
+        position: absolute;
+        right: 3%;
+        bottom: 3%;
+    }
+
+
+/* -----------------------------------------------------------------------------SCENERY-*/
+
+.scenery
+    {
+        background-color: #fafafa;
+    }
+
+/* -----------------------------------------------------------------------------SCENERY-*/
+
+.culture
+    {
+        background-color: #ececec;
+    }
+
+/* -----------------------------------------------------------------------------HISTORY-*/
+
+.history
+    {
+        background-color: #fafafa;
+    }
+
+/* -----------------------------------------------------------------------------FOOTER-*/
+
+footer
+    {
+        background-color: grey;
+    }
