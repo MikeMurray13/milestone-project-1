@@ -1,3 +1,0 @@
-
-COMMIT NOTES -->
-title, bootstrap links, skeleton, nav links
