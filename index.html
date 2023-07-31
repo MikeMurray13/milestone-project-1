@@ -9,122 +9,155 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<!-- NAVIGATION BAR -->
+<!------------------------------------------------------------------------------ NAVIGATION BAR -->
     <nav>
-        <i class="fa-solid fa-dragon"></i>
+        <a href="#hero-image"><i class="fa-solid fa-dragon"></i></a>
         <div class="float-end">
             <a href="#scenery" class="uppercase">scenery</a>
             <a href="#culture" class="uppercase">culture</a>
             <a href="#history" class="uppercase">history</a>
         </div>
     </nav>
-<!-- HERO IMAGE / BRANDING -->
-    <section class="hero-image">
-        <div class="hero-text">
+<!------------------------------------------------------------------------------ HERO IMAGE / BRANDING -->
+    <section id="hero-image" class="hero-image">
+        <div class="hero-text float-start">
             <h1 id="hero-welcome-text">
                 Welcome to Wales
             </h1>
-            <h6 id="hero-caption">
+            <hr>
+            <h6 id="hero-caption" class="float-end">
                 <i class="fa-solid fa-location-pin"></i> Eryri National Park
             </h6>
         </div>
     </section>
+
+<!------------------------------------------------------------------------------ SCENERY -->
     <section id="scenery" class="scenery uppercase text-center">
+        <div class="section-margins">
         <h2>Scenery</h2>
-        <p class="flavour-text">Flavour text.</p>
+        <p class="flavour-text">Welcome to Wales, a land of breathtaking landscapes and scenic wonders. Discover the rugged majesty of Snowdonia's mountains, the rolling hills of the Brecon Beacons, and the stunning coastline of Pembrokeshire. Wander through picturesque valleys, enchanting forests, and charming villages. Let Wales' natural beauty captivate your soul on an unforgettable journey.</p>
+        </div>
     </section>
+
+<!------------------------------------------------------------------------------ CULTURE -->
     <section id="culture" class="culture uppercase text-center">
+        <div class="section-margins">
         <h2>Culture</h2>
-        <p class="flavour-text">Flavour text.</p>
-        <div class="row">
+        <p class="flavour-text">Delight in Wales' diverse culture, where hearty cuisine like cawl and Welsh cakes reflects its rich history. Embrace the warm and welcoming Welsh people, known for their strong sense of community and love for the arts. Witness its evolving political landscape, cherishing traditions while embracing progressive values.</p>
+        <div class="row justify-content-center">
             <div class="col-md-4 card">
-                <img src="assets/images/placeholder-image.jpg" class="card-img-top" alt="...">
+                <img src="assets/images/welsh-flag.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                    </p>
+                    <h5 class="card-title">Language</h5>
+                    <p class="card-text">The Welsh language, Cymraeg, boasts a rich history, nurturing Wales' cultural identity and flourishing as a living, poetic tongue.</p>
+                <div class="card-body">
+                    <a href="https://www.duolingo.com/" class="card-link">Read more...</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 card">
+                <img src="assets/images/welsh-cakes.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cuisine</h5>
+                    <p class="card-text">Traditional dishes like Welsh rarebit, cawl, and bara brith, showcase unique flavors.</p>
+                    <div class="card-body">
+                        <a href="https://www.wales.com/visit/food-drink/essential-welsh-eats" class="card-link">Read more...</a>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4 card">
                 <img src="assets/images/placeholder-image.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4 card">
-                <img src="assets/images/placeholder-image.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 card">
-                <img src="assets/images/placeholder-image.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4 card">
-                <img src="assets/images/placeholder-image.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4 card">
-                <img src="assets/images/placeholder-image.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                    </p>
+                    <h5 class="card-title">Festivals</h5>
+                    <p class="card-text">National celebrations, such as St. David's Day and the Eisteddfod, promote Welsh pride.</p>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Read more...</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-md-4 card">
-                <img src="assets/images/placeholder-image.jpg" class="card-img-top" alt="...">
+                <img src="assets/images/rugby.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
+                    <h5 class="card-title">Rugby</h5>
+                    <p class="card-text">Wales' passion for rugby unites the nation, and the sport holds a special place in Welsh culture.
                     </p>
+                <div class="card-body">
+                    <a href="https://www.wru.wales/" class="card-link">Read more...</a></div>
                 </div>
             </div>
             <div class="col-md-4 card">
                 <img src="assets/images/placeholder-image.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                    </p>
+                    <h5 class="card-title">Poetry</h5>
+                    <p class="card-text">Renowned poets like Dylan Thomas and R S Thomas have left a lasting literary legacy.</p>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Read more...</a>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4 card">
                 <img src="assets/images/placeholder-image.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                    </p>
+                    <h5 class="card-title">Folklore</h5>
+                    <p class="card-text">Tales of King Arthur and the Mabinogion contribute to Wales' captivating folklore and mythology.</p>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Read more...</a>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4 card">
+                <img src="assets/images/placeholder-image.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">7</h5>
+                    <p class="card-text">text 7</p>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 card">
+                <img src="assets/images/placeholder-image.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">8</h5>
+                    <p class="card-text">text 8</p>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 card">
+                <img src="assets/images/placeholder-image.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">9</h5>
+                    <p class="card-text">text 9</p>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Read more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
+
+<!------------------------------------------------------------------------------ HISTORY -->
     <section id="history" class="history uppercase text-center">
+        <div class="section-margins">
         <h2>History</h2>
-        <p>Flavour text.</p>
+        <p class="flavour-text">Welsh history is a tapestry of resilience and cultural identity. From ancient Celtic tribes to Roman occupation, Wales emerged as a distinct nation with its language and traditions. Conquests, rebellions, and industrialization shaped its trajectory. Today, Wales stands proudly, preserving its heritage while embracing modernity, a testament to its enduring spirit.</p>
+        </div>
     </section>
+
+<!------------------------------------------------------------------------------ FOOTER -->
     <footer>
         <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
         <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
         <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
     </footer>
 
-<!-- SCRIPTS -->
+<!------------------------------------------------------------------------------ SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/295d82d539.js" crossorigin="anonymous"></script>
 </body>

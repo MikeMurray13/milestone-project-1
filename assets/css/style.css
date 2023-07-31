@@ -1,9 +1,16 @@
-body
-    {
-        margin: 0;
-        padding: 0;
-    }
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 
+.row 
+    {
+        --bs-gutter-x: 0;
+    }
 
 /* -----------------------------------------------------------------------------NAVIGATION-*/
 
@@ -14,7 +21,7 @@ nav
         position: fixed;
         top:0;
         left:0;
-        width: 100%;
+        width: 100vw;
         z-index: 1;
         padding: 20px 30px 50px;
         font-size: x-large;
@@ -34,57 +41,54 @@ nav a:hover
 /* -----------------------------------------------------------------------------HERO IMAGE | BRANDING */
 
 .hero-image
-    {   
+    {   position: relative;
         background-image: url("../images/hero-image.jpg");
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;
         background-color: #fafafa;
         height: 100vh;
+        color: #fafafa
     }
 
 .hero-text
-    {   
-        position: relative;
-        color: white;
-        height: 100%;
-
-    }
-
-#hero-welcome-text
-    {   
-        position: absolute; 
-        left:10%;
-        top:70%;
-        font-size: 5em;
-    }
-
-#hero-caption
     {
+        width: 100%;
         position: absolute;
-        right: 3%;
-        bottom: 3%;
+        bottom: 0;
+        padding: 50px;
     }
+
+.hero-text hr
+    {
+        border-top: 2px solid;
+        opacity: 1;
+    }
+
+
 
 
 /* -----------------------------------------------------------------------------SECTIONS-*/
 
 
-section+p 
-    {
-        background-color: yellow;
+.section-margins
+    {   
+        margin: 0;
+        width:100vw;
     }
 
 section h2
-    {
-        color: blue;
+    {   
+        padding-top: 30px;
+        color: rgb(33, 33, 163);
     }
 
 .flavour-text
     {   
         text-align: justify;
-        text-justify: inter-word;
         color: red;
+        padding-left: 300px;
+        padding-right: 300px;
     }
 
 
@@ -96,12 +100,23 @@ section h2
         background-color: #fafafa;
     }
 
-/* -----------------------------------------------------------------------------SCENERY-*/
+/* -----------------------------------------------------------------------------CULTURE-*/
 
 .culture
     {
         background-color: #ececec;
     }
+
+.card
+    {
+        padding: 0;
+        margin: 10px;
+        width: 20%;
+        --bs-card-spacer-y: 0.3rem;
+        --bs-card-spacer-x: 0.3rem;
+    }
+
+
 
 /* -----------------------------------------------------------------------------HISTORY-*/
 
@@ -116,6 +131,8 @@ footer
     {
         background-color: grey;
         color: #fafafa;
+        height:80px;
+        padding: 50px;
     }
  
 footer a 

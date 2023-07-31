@@ -1,13 +1,8 @@
 
 COMMIT NOTES
 
-nav gradient
-added socials
-some styling
 
 
 TO-DO
 
-add image carousel
-history timeline
-change to welsh on hover
+add aria-hidden to all <i> tags
