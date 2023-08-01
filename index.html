@@ -11,7 +11,7 @@
 <body>
 <!------------------------------------------------------------------------------ NAVIGATION BAR -->
     <nav>
-        <a href="#hero-image"><i class="fa-solid fa-dragon"></i></a>
+        <a href="#hero-image"><i class="fa-solid fa-dragon" aria-hidden="true"></i></a>
         <div class="float-end">
             <a href="#scenery" class="uppercase">scenery</a>
             <a href="#culture" class="uppercase">culture</a>
@@ -19,31 +19,80 @@
         </div>
     </nav>
 <!------------------------------------------------------------------------------ HERO IMAGE / BRANDING -->
-    <section id="hero-image" class="hero-image">
-        <div class="hero-text float-start">
+    <section id="hero-image" class="hero-image container-fluid">
+        <div class="hero-text">
             <h1 id="hero-welcome-text">
                 Welcome to Wales
             </h1>
             <hr>
             <h6 id="hero-caption" class="float-end">
-                <i class="fa-solid fa-location-pin"></i> Eryri National Park
+                <i class="fa-solid fa-location-pin" aria-hidden="true"></i> Eryri National Park
             </h6>
         </div>
     </section>
 
 <!------------------------------------------------------------------------------ SCENERY -->
     <section id="scenery" class="scenery uppercase text-center">
-        <div class="section-margins">
-        <h2>Scenery</h2>
-        <p class="flavour-text">Welcome to Wales, a land of breathtaking landscapes and scenic wonders. Discover the rugged majesty of Snowdonia's mountains, the rolling hills of the Brecon Beacons, and the stunning coastline of Pembrokeshire. Wander through picturesque valleys, enchanting forests, and charming villages. Let Wales' natural beauty captivate your soul on an unforgettable journey.</p>
+        <div class="container">
+            <h2>Scenery</h2>
+            <p class="flavour-text">Welcome to Wales, a land of breathtaking landscapes and scenic wonders. Discover the rugged majesty of Snowdonia's mountains, the rolling hills of the Brecon Beacons, and the stunning coastline of Pembrokeshire. Wander through picturesque valleys, enchanting forests, and charming villages. Let Wales' natural beauty captivate your soul on an unforgettable journey.</p>
         </div>
+        <div class="row justify-content-center">
+        <div class="carousel-container col-md-10">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/placeholder-image.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Snowdonia National Park</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/placeholder-image.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Brecon Beacons National Park</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/placeholder-image.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Pembrokeshire Coast National Park</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/placeholder-image.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Llyn Peninsula</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/placeholder-image.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>The Gower Peninsula</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        </div>
+   
+
     </section>
 
 <!------------------------------------------------------------------------------ CULTURE -->
     <section id="culture" class="culture uppercase text-center">
-        <div class="section-margins">
+        <div class="container">
         <h2>Culture</h2>
         <p class="flavour-text">Delight in Wales' diverse culture, where hearty cuisine like cawl and Welsh cakes reflects its rich history. Embrace the warm and welcoming Welsh people, known for their strong sense of community and love for the arts. Witness its evolving political landscape, cherishing traditions while embracing progressive values.</p>
+        </div>
         <div class="row justify-content-center">
             <div class="col-md-4 card">
                 <img src="assets/images/welsh-flag.jpg" class="card-img-top" alt="...">
@@ -74,8 +123,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
+
+
             <div class="col-md-4 card">
                 <img src="assets/images/rugby.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -92,22 +141,20 @@
                     <h5 class="card-title">Poetry</h5>
                     <p class="card-text">Renowned poets like Dylan Thomas and R S Thomas have left a lasting literary legacy.</p>
                     <div class="card-body">
-                        <a href="#" class="card-link">Read more...</a>
+                        <a href="https://www.felinfach.com/pages/10-famous-welsh-poets" class="card-link">Read more...</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 card">
+            <div class="d-none d-md-block col-md-4 card">
                 <img src="assets/images/placeholder-image.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Folklore</h5>
                     <p class="card-text">Tales of King Arthur and the Mabinogion contribute to Wales' captivating folklore and mythology.</p>
                     <div class="card-body">
-                        <a href="#" class="card-link">Read more...</a>
+                        <a href="https://www.nationaltrust.org.uk/visit/wales/welsh-myths-and-folklore" class="card-link">Read more...</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
             <div class="col-md-4 card">
                 <img src="assets/images/placeholder-image.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -139,22 +186,60 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
 
 <!------------------------------------------------------------------------------ HISTORY -->
     <section id="history" class="history uppercase text-center">
-        <div class="section-margins">
-        <h2>History</h2>
-        <p class="flavour-text">Welsh history is a tapestry of resilience and cultural identity. From ancient Celtic tribes to Roman occupation, Wales emerged as a distinct nation with its language and traditions. Conquests, rebellions, and industrialization shaped its trajectory. Today, Wales stands proudly, preserving its heritage while embracing modernity, a testament to its enduring spirit.</p>
+        <div class="container">
+            <h2>History</h2>
+            <p class="flavour-text">Welsh history is a tapestry of resilience and cultural identity. From ancient Celtic tribes
+                to Roman occupation, Wales emerged as a distinct nation with its language and traditions. Conquests, rebellions,
+                and industrialization shaped its trajectory. Today, Wales stands proudly, preserving its heritage while
+                embracing modernity, a testament to its enduring spirit.</p>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center timeline">
+                <div class="left col-md-6 d-flex align-items-center justify-content-end">
+                    <img src="assets/images/placeholder-image.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="right col-md-6 d-flex align-items-center justify-content-start text-end">
+                    <div class="timeline-text">
+                        <h5>9000bc</h3>
+                        <hr class="timeline-line">
+                        <p>placeholder text</p>
+                    </div>
+                </div>
+                <div class="left col-md-6 d-flex align-items-center justify-content-end text-start">
+                    <div class="timeline-text">
+                        <h5>2023</h3>
+                        <hr class="timeline-line">
+                        <p>placeholder text 2</p>
+                    </div>
+                </div>
+                <div class="right col-md-6 d-flex align-items-center justify-content-start">
+                    <img src="assets/images/placeholder-image.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
         </div>
     </section>
 
 <!------------------------------------------------------------------------------ FOOTER -->
     <footer>
-        <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    COLUMN1
+                </div>
+                <div class="col-md-4 justify-content-center">
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-4">
+                    COLUMN2
+                </div>
+            </div>
+        </div>
     </footer>
 
 <!------------------------------------------------------------------------------ SCRIPTS -->

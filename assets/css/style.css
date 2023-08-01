@@ -12,6 +12,8 @@ body {
         --bs-gutter-x: 0;
     }
 
+
+
 /* -----------------------------------------------------------------------------NAVIGATION-*/
 
 nav 
@@ -41,10 +43,9 @@ nav a:hover
 /* -----------------------------------------------------------------------------HERO IMAGE | BRANDING */
 
 .hero-image
-    {   position: relative;
-        background-image: url("../images/hero-image.jpg");
-        background-repeat: no-repeat;
-        background-position: center top;
+    {   
+        position: relative;
+        background: url("../images/hero-image.jpg") no-repeat center top;
         background-size: cover;
         background-color: #fafafa;
         height: 100vh;
@@ -56,6 +57,7 @@ nav a:hover
         width: 100%;
         position: absolute;
         bottom: 0;
+        left:0;
         padding: 50px;
     }
 
@@ -71,11 +73,6 @@ nav a:hover
 /* -----------------------------------------------------------------------------SECTIONS-*/
 
 
-.section-margins
-    {   
-        margin: 0;
-        width:100vw;
-    }
 
 section h2
     {   
@@ -87,8 +84,6 @@ section h2
     {   
         text-align: justify;
         color: red;
-        padding-left: 300px;
-        padding-right: 300px;
     }
 
 
@@ -125,13 +120,34 @@ section h2
         background-color: #fafafa;
     }
 
+.timeline-text
+    {
+        width:80%;
+    }
+
+
+
+@media(min-width: 768px) 
+    {
+        .timeline .right 
+            {
+            border-left: 2px solid black;
+            }
+
+        .timeline-line 
+            {
+            border: 1px solid black;
+            opacity: 1;
+            margin: 0.5em 0;
+            }
+    }
+
 /* -----------------------------------------------------------------------------FOOTER-*/
 
 footer
     {
         background-color: grey;
         color: #fafafa;
-        height:80px;
         padding: 50px;
     }
  
