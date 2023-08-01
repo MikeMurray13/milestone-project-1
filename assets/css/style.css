@@ -19,20 +19,20 @@ body {
 nav 
     {   
         color: #fafafa;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 0, 0, 0));
+        background-image: linear-gradient(to bottom, rgb(43, 43, 43), rgba(255, 0, 0, 0));
         position: fixed;
         top:0;
         left:0;
         width: 100vw;
         z-index: 1;
         padding: 20px 30px 50px;
-        font-size: x-large;
     }
 
 nav a
     {
         color: #fafafa;
         text-decoration: none;
+        padding-left: 20px;
     }
 
 nav a:hover
@@ -49,7 +49,7 @@ nav a:hover
         background-size: cover;
         background-color: #fafafa;
         height: 100vh;
-        color: #fafafa
+        color: white;
     }
 
 .hero-text
@@ -72,18 +72,22 @@ nav a:hover
 
 /* -----------------------------------------------------------------------------SECTIONS-*/
 
-
+body section:not(:first-of-type)
+    {
+        padding-bottom: 50px;
+    }
 
 section h2
     {   
-        padding-top: 30px;
-        color: rgb(33, 33, 163);
+        color: #444444;
+        padding-top: 80px;
     }
 
 .flavour-text
-    {   
+    {
+        color: #444444;
         text-align: justify;
-        color: red;
+        padding-bottom: 25px;
     }
 
 
@@ -95,6 +99,7 @@ section h2
         background-color: #fafafa;
     }
 
+
 /* -----------------------------------------------------------------------------CULTURE-*/
 
 .culture
@@ -104,14 +109,25 @@ section h2
 
 .card
     {
+        color:#444444;
         padding: 0;
         margin: 10px;
-        width: 20%;
         --bs-card-spacer-y: 0.3rem;
         --bs-card-spacer-x: 0.3rem;
     }
 
+.card-img-top
+    {
+        object-fit: cover;
+        height: 50%;
+    }
 
+
+
+.card-body
+    {
+        height: 50%;
+    }
 
 /* -----------------------------------------------------------------------------HISTORY-*/
 
@@ -125,20 +141,44 @@ section h2
         width:80%;
     }
 
-
-
-@media(min-width: 768px) 
+.timeline-line 
     {
-        .timeline .right 
-            {
-            border-left: 2px solid black;
-            }
+                    border: 1px solid #444444;
+                    opacity: 1;
+                    margin: 0.5em 0;
+                }
 
-        .timeline-line 
+.timeline-icon
+    {
+        padding-left:20px;
+        color: #444444;
+        text-decoration: none;
+        font-size:xx-large;
+    }
+
+@media(min-width: 576px) 
+    {
+        .timeline .left 
+        {
+                        border-right: 1px solid #444444;
+                    }
+                
+                    .timeline .right {
+                        border-left: 1px solid #444444;
+                    }
+    }
+
+@media(max-width: 575.98px) 
+    {
+        .timeline .left,
+        .timeline .right
             {
-            border: 1px solid black;
-            opacity: 1;
-            margin: 0.5em 0;
+            width:70%;
+            border-left: 2px solid #444444;
+            }
+        .timeline-line
+            {
+            margin: 0.2em 0;
             }
     }
 

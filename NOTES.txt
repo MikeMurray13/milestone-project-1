@@ -1,7 +1,7 @@
 
 COMMIT NOTES
 
-"Add aria-hidden to all <i> tags, remove several classes/margins as redundant (replaced with bootstrap), create and populate timeline, format footer columns"
+"Change target of all external links, made timeline and culture responsive"
 
 TO-DO
 
