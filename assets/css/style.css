@@ -19,26 +19,38 @@ body {
 nav 
     {   
         color: #fafafa;
-        background-image: linear-gradient(to bottom, rgb(43, 43, 43), rgba(255, 0, 0, 0));
+        background-image: linear-gradient(to bottom, rgb(43, 43, 43,1), rgba(255, 0, 0, 0));
         position: fixed;
         top:0;
         left:0;
         width: 100vw;
+        padding: 1.5rem 3rem 2rem;
         z-index: 1;
-        padding: 20px 30px 50px;
     }
 
 nav a
     {
         color: #fafafa;
         text-decoration: none;
-        padding-left: 20px;
     }
 
 nav a:hover
     {
         text-decoration: underline;
     }
+
+.nav-menu
+    {   
+        padding-bottom: 100vh;
+    }
+
+.nav-x-menu
+    {
+        padding-left: 30px;
+    }
+
+
+
 
 /* -----------------------------------------------------------------------------HERO IMAGE | BRANDING */
 
@@ -59,6 +71,7 @@ nav a:hover
         bottom: 0;
         left:0;
         padding: 50px;
+        text-shadow: 0 0 1rem black;
     }
 
 .hero-text hr
@@ -66,7 +79,6 @@ nav a:hover
         border-top: 2px solid;
         opacity: 1;
     }
-
 
 
 
@@ -80,7 +92,7 @@ body section:not(:first-of-type)
 section h2
     {   
         color: #444444;
-        padding-top: 80px;
+        padding-top: 100px;
     }
 
 .flavour-text
@@ -118,27 +130,55 @@ section h2
         background-color: #ececec;
     }
 
+.card-container
+    {
+        padding: 5px;
+    }
+
 .card
     {
         color:#444444;
-        padding: 0;
-        margin: 10px;
         --bs-card-spacer-y: 0.3rem;
         --bs-card-spacer-x: 0.3rem;
     }
+    
+
 
 .card-img-top
     {
         object-fit: cover;
         height: 50%;
+                overflow: hidden;
     }
 
+    .card-body
+        {   
+            height:50%;
+        }
 
+        .card-title
+            {
+                margin: 0;
+            }
 
-.card-body
+.card-text
     {
-        height: 50%;
+        text-align: justify;
+        padding: 5px;
+        margin:0;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
     }
+
+
+
+
+
+
+
+
 
 /* -----------------------------------------------------------------------------HISTORY-*/
 
@@ -150,7 +190,7 @@ section h2
 
 .timeline-text
     {
-        width:80%;
+        width:90%;
     }
 
 .timeline-line 
@@ -169,32 +209,27 @@ section h2
         font-size:xx-large;
     }
 
-@media(min-width: 576px) 
+                .right p {
+                    text-align: justify;
+                    padding-left: 20px;
+                }
+
+                                .left p {
+                    text-align: justify;
+                    padding-right: 20px;
+                }
+
+.timeline-tail
     {
-        .timeline .left 
-        {
-                        border-right: 1px solid;
-                    }
-                
-                    .timeline .right {
-                        border-left: 1px solid;
-                    }
+        height: 30px;
     }
 
-@media(max-width: 575.98px) 
-    {
-        .timeline .left,
-        .timeline .right
-            {
-            padding-bottom: 20px;
-            width:80%;
-            border-left: 2px solid;
-            }
-        .timeline-line
-            {
-            margin: 0.2em 0;
-            }
-    }
+
+
+
+
+        
+    
 
 .history-modal-button h1:hover
     {
@@ -222,3 +257,80 @@ footer a
         color: #fafafa;
         text-decoration: none;
     }
+
+/* -----------------------------------------------------------------------------CONTACT-*/
+
+.bg-contact img
+    {
+        width: 100%;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+
+
+/* -----------------------------------------------------------------------------MEDIA QUERIES-*/
+
+@media(max-width: 400px)
+    {
+        .card-text{
+        -webkit-line-clamp: 3;
+        }
+    }
+
+@media(max-width: 575.98px) {
+
+        nav {
+                padding: 15px 15px 20px;
+            }
+        
+            nav i {
+                font-size: xx-large;
+            }
+
+
+
+    .timeline .left,
+    .timeline .right {
+        padding-bottom: 20px;
+        width: 95%;
+        border-left: 2px solid;
+    }
+
+    .timeline-line {
+        margin: 0.2em 0;
+    }
+
+
+    .right p,
+    .left p {
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 0;
+    }
+
+}
+
+@media(min-width: 576px) {
+    .timeline .left {
+        border-right: 1px solid;
+    }
+
+    .timeline .right {
+
+        border-left: 1px solid;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .card-text {
+        -webkit-line-clamp: 3;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .card-text {
+        -webkit-line-clamp: 5;
+    }
+}
+
