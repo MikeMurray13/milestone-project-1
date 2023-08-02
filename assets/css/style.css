@@ -173,7 +173,8 @@ section h2
         .timeline .left,
         .timeline .right
             {
-            width:70%;
+            padding-bottom: 20px;
+            width:80%;
             border-left: 2px solid #444444;
             }
         .timeline-line

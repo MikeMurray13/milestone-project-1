@@ -1,7 +1,8 @@
 
 COMMIT NOTES
 
-"Change target of all external links, made timeline and culture responsive"
+
 
 TO-DO
 
+compress images for web
