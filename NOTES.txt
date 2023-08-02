@@ -1,8 +1,0 @@
-
-COMMIT NOTES
-
-
-
-TO-DO
-
-compress images for web

@@ -8,6 +8,10 @@ help choosing colors - <https://uxmovement.com/content/why-you-should-never-use-
 
 ## TUTORIALS AND CODE FOUND ELSEWHERE
 
+## TOOLS
+
+Error Checking - https://webformatter.com/html - Revealed several mixed opening (H5) and closing (H3) header tags and an errant </div> tag. 
+
 Gradient code - <https://www.w3schools.com/css/css3_gradients.asp>
 Cards for culture section - <https://getbootstrap.com/docs/5.3/components/card/>
 fix height of scenery carousel - <https://raybo.org/posts/2021-03-27-consistent-height-carousels-with-css-gradients-by-hacking-the-bootstrap-5-carousel/>

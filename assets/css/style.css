@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=REM&family=Righteous&display=swap');
+
+
 html,
 body {
     width: 100%;
@@ -5,6 +9,9 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    font-family: 'REM', sans-serif;
+    font-weight: 200;
+
 }
 
 .row 
@@ -18,6 +25,7 @@ body {
 
 nav 
     {   
+        font-family: "Righteous", sans-serif;
         color: #fafafa;
         background-image: linear-gradient(to bottom, rgb(43, 43, 43,1), rgba(255, 0, 0, 0));
         position: fixed;
@@ -41,6 +49,7 @@ nav a:hover
 
 .nav-menu
     {   
+        padding-top:20px;
         padding-bottom: 100vh;
     }
 
@@ -65,7 +74,7 @@ nav a:hover
     }
 
 .hero-text
-    {
+    {   font-family: "Righteous", sans-serif;
         width: 100%;
         position: absolute;
         bottom: 0;
@@ -246,7 +255,7 @@ section h2
 /* -----------------------------------------------------------------------------FOOTER-*/
 
 footer
-    {
+    {  
         background-color: grey;
         color: #fafafa;
         padding: 50px;
@@ -258,14 +267,84 @@ footer a
         text-decoration: none;
     }
 
-/* -----------------------------------------------------------------------------CONTACT-*/
+    .socials
+        {
+            text-align: center;
+        }
 
-.bg-contact img
+.socials i
     {
-        width: 100%;
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        padding: 5px 10px 5px 10px;
     }
 
+
+
+.resources h6
+    {
+                    font-size: larger;
+        text-decoration: underline;
+    }
+
+.resources a:hover
+    {
+        text-decoration: underline;
+    }
+
+    footer hr 
+        {
+            border-top: 1px solid;
+            opacity: 100;
+        }
+
+.author
+        {
+            font-family:'Courier New', Courier, monospace;
+        }
+
+/* -----------------------------------------------------------------------------CONTACT-*/
+
+.contact-hero-image
+    {
+        position: relative;
+        background: url("../images/contact-hero-image.jpg") no-repeat center center;
+        background-size: cover;
+        height: 50vh;
+        color: white;
+    }
+
+.contact-hero-image .hero-text
+    {
+        position: absolute;
+        bottom: 50px;
+    }
+
+.white-blend
+    {   position:absolute;
+        left:0;
+        bottom:0;
+        width: 100%;
+        height: 100px;
+        background-image: linear-gradient(to top, #fafafa, #ececec00);
+    }
+
+
+.contact-form-container
+    {
+                padding: 50px 20px 50px 20px;
+        background-color: #fafafa;
+    }
+
+.contact-form-container h3
+    {   text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #name,
+    #email,
+#message
+    {
+        width:250px;
+    }
 
 /* -----------------------------------------------------------------------------MEDIA QUERIES-*/
 
@@ -306,6 +385,11 @@ footer a
         padding-left: 20px;
         padding-right: 0;
     }
+
+        .resources {
+            padding-bottom: 20px;
+            text-align: center;
+        }
 
 }
 
