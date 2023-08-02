@@ -100,6 +100,17 @@ section h2
     }
 
 
+
+.carousel-item img
+    {
+/*found online - see README for details (carousel image height)*/       
+        object-fit: cover;
+            object-position: center;
+            height: 50vh;
+            overflow: hidden;
+/*found online - see README for details (/carousel image height)*/
+    }
+
 /* -----------------------------------------------------------------------------CULTURE-*/
 
 .culture
@@ -134,6 +145,7 @@ section h2
 .history
     {
         background-color: #fafafa;
+        color: #444444;
     }
 
 .timeline-text
@@ -143,14 +155,15 @@ section h2
 
 .timeline-line 
     {
-                    border: 1px solid #444444;
+                    border: 1px solid;
                     opacity: 1;
                     margin: 0.5em 0;
                 }
 
 .timeline-icon
     {
-        padding-left:20px;
+        padding-left:30px;
+        padding-bottom: 20px;
         color: #444444;
         text-decoration: none;
         font-size:xx-large;
@@ -160,11 +173,11 @@ section h2
     {
         .timeline .left 
         {
-                        border-right: 1px solid #444444;
+                        border-right: 1px solid;
                     }
                 
                     .timeline .right {
-                        border-left: 1px solid #444444;
+                        border-left: 1px solid;
                     }
     }
 
@@ -175,12 +188,24 @@ section h2
             {
             padding-bottom: 20px;
             width:80%;
-            border-left: 2px solid #444444;
+            border-left: 2px solid;
             }
         .timeline-line
             {
             margin: 0.2em 0;
             }
+    }
+
+.history-modal-button h1:hover
+    {
+        color:#2e2e2e;
+    }
+
+.close
+    {
+        color: #fafafa;
+        background-color: #444444;
+        border: none;
     }
 
 /* -----------------------------------------------------------------------------FOOTER-*/
