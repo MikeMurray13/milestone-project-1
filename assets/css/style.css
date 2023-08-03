@@ -274,7 +274,7 @@ footer hr {
 }
 
 .btn-secondary {
-    --bs-btn-bg: grey;
+    background-color: grey;
 }
 
 #name,
