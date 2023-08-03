@@ -12,6 +12,8 @@ help choosing colors - <https://uxmovement.com/content/why-you-should-never-use-
 
 Error Checking - https://webformatter.com/html - Revealed several mixed opening (H5) and closing (H3) header tags and an errant </div> tag. 
 
+I used <https://tinypng.com/> to compress the all the images on the site and <https://pixelied.com/convert/jpg-converter/> to convert them to .webp format. 
+
 Gradient code - <https://www.w3schools.com/css/css3_gradients.asp>
 Cards for culture section - <https://getbootstrap.com/docs/5.3/components/card/>
 fix height of scenery carousel - <https://raybo.org/posts/2021-03-27-consistent-height-carousels-with-css-gradients-by-hacking-the-bootstrap-5-carousel/>
@@ -23,7 +25,11 @@ https://blog.logrocket.com/ways-truncate-text-css/
 ## CHALLENGES
 Finding royalty free images of sufficient tone and quality. 
 
+TESTING
 
+
+
+Error: A charset attribute on a meta element found after the first 1024 bytes.
 
 ## DEPLOYMENT
 
