@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Croeso i Cymru | Welcome to Wales</title>
+    <link rel="icon" href="assets/images/dragon.icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -62,8 +63,8 @@
     <section class="container-fluid contact-form-container">
         <div class="container d-flex justify-content-center">
             <div class="row">
-                <h3 class="col-12 col-sm-6">Contact Us</h3>
-                <form action="" method="post" class="col-12 col-sm-6">
+                <h3 class="col col-md-4">Contact Us</h3>
+                <form method="post" class="col col-md-8">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required><br>
                     <br>
@@ -78,14 +79,14 @@
                     <input type="radio" id="article" name="reason" value="article">
                     <label for="article">I have an article idea</label><br>
                     <input type="radio" id="images" name="reason" value="image">
-                    <label for="images">You're using one of my images and I don't like it</label><br>
+                    <label for="images">You're using one of my images</label><br>
                     <input type="radio" id="none" name="reason" value="none">
                     <label for="none">None of the above</label><br>
                     <br>
-                    <label for="message">Message:</label>
+                    <label for="message">Message:</label><br>
                     <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea><br>
                     <br>
-                    <input type="submit" value="Submit">
+                    <input class="btn btn-secondary" type="submit" value="Submit">
                 </form>
             </div>
         </div>

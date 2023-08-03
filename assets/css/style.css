@@ -273,10 +273,14 @@ footer hr {
     padding-bottom: 20px;
 }
 
+.btn-secondary {
+    --bs-btn-bg: grey;
+}
+
 #name,
 #email,
 #message {
-    width: 250px;
+    min-width: 310px;
 }
 
 /* -----------------------------------------------------------------------------MEDIA QUERIES-*/
