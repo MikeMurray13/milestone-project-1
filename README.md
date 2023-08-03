@@ -2,7 +2,9 @@
 
 ## GOAL - CLIENT/CUSTOMER
 
-I wanted to make an image heavy tourism website to highlight the beauty of Wales and encourage people to visit.
+I wanted to make an image heavy tourism website to highlight the beauty of Wales and encourage people to visit.  
+
+The site should be bright and fresh and potentially host a lot of information.  
 
 ## DESIGN
 
@@ -27,12 +29,14 @@ The main sections cover the three main facets of any countries tourism: scenery,
 
 ## TOOLS
 
-HTML - Markup
-CSS - Styling
-Bootstrap 5.3 - Layout, alignment, and components
-Font Awesome - Icons
-Google Fonts - Righteous and REM fonts.
-Balsamiq - Wireframes
+- HTML - Markup  
+- CSS - Styling  
+- Bootstrap 5.3 - Layout, alignment, and components  
+- Font Awesome - Icons  
+- Google Fonts - Righteous and REM fonts  
+- Balsamiq - Wireframes  
+- TinyPNG - Image compression
+- Pixelied - Image conversion
 
 ## TUTORIALS AND CODE FOUND ELSEWHERE
 
@@ -64,17 +68,21 @@ Every section has been tested for responsiveness and responds to changes in scre
 
 The only error that repeatedly appeared in the W3 Validation was "Error: A charset attribute on a meta element found after the first 1024 bytes". The only answer I was able to find online for it was to move the meta tag to the very top of the head tag but mine was already there from setting up the basic structure with Emmet.
 
-I tested the site's performance using Lighthouse. 
+Once I deployed, I ran through the W3 Validation again and 72 errors occured. Most are empty headings that actually have content and warnings that h1 is a top level content only. The same applies for the contact page (reduced from 56 to 14 errors).
+
+I removed a lot of redundant aria controls and labels, removed inline heights from several elements and got the number of errors down to 56 with no red/serious warnings.
 
 ### LIGHTHOUSE
 
+I tested the site's performance using Lighthouse.  
+
 Initially the [performance scored 78%](assets/docs/Lighthouse_Summary_1.pdf). The images being the main thing hampering its performance.
 
-After using TinyPNG to compress the images, the [score rose to 90%](assets/docs/Lighthouse_Summary_1.pdf). 
+After using TinyPNG to compress the images down to around 12% of their original size, the [score rose to 90%](assets/docs/Lighthouse_Summary_2.pdf). 
 
 ![size comparison of before and after the images were commpressed](assets/docs/Image_Compression.png)
 
-I then used Pixelied to convert the images to .webp format and the score [rose again to 92%](assets/docs/Lighthouse_Summary_1.pdf).
+I then used Pixelied to convert the images to .webp format and the score [rose again to 92%](assets/docs/Lighthouse_Summary_3.pdf).
 
 ## DEPLOYMENT
 
@@ -102,40 +110,40 @@ As the hero image is taller than wide on smaller screens, having the image scrol
 
 ### CREDITS
 
-**#### LANDING SITE**
-Hero Image - Mitchell Orr - <https://unsplash.com/photos/Ddp_T92Vjus?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink>
+**#### LANDING SITE**  
+Hero Image - Mitchell Orr - <https://unsplash.com/photos/Ddp_T92Vjus?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink>  
 
-**#### SCENERY**
-Gower Peninsula - <https://commons.wikimedia.org/wiki/File:Morning_Sun_at_Three_Cliffs_Bay>,_Gower.jpg>
-Snowdonia - <https://commons.wikimedia.org/wiki/File:Llyn_Llydaw_from_Crib_Goch_2.jpg>
-Brecon - <https://www.flickr.com/photos/126654539@N08/19691578100>
-Pembrokeshire Coast - <https://commons.wikimedia.org/wiki/File:Pembrokeshire_Coast_National_Park_01.jpg>
-Llyn Peninsula - <https://www.geograph.org.uk/photo/4976829>
+**#### SCENERY**  
+Gower Peninsula - <https://commons.wikimedia.org/wiki/File:Morning_Sun_at_Three_Cliffs_Bay>,_Gower.jpg>  
+Snowdonia - <https://commons.wikimedia.org/wiki/File:Llyn_Llydaw_from_Crib_Goch_2.jpg>  
+Brecon - <https://www.flickr.com/photos/126654539@N08/19691578100>  
+Pembrokeshire Coast - <https://commons.wikimedia.org/wiki/File:Pembrokeshire_Coast_National_Park_01.jpg>  
+Llyn Peninsula - <https://www.geograph.org.uk/photo/4976829>  
 
-**#### CULTURE**
-Folklore - <https://www.worldhistory.org/Cernunnos/>
-Welsh Flag Image - Taken by myself at YesCymru Independence March, Swansea. Feel free to use it. Link appreciated.
-Welsh Cakes - <https://www.shutterstock.com/image-photo/homemade-welsh-cakes-raisins-milk-close-449061619>
-St David's Day - <https://commons.wikimedia.org/wiki/File:St._David%27s_Day_parade>,_Cardiff_-_geograph.org.uk_-_3867279.jpg>
-Rugby - <https://commons.wikimedia.org/wiki/File:Rugby_world_cup_2011_wales_fidji_tackle_6_octobre_2011.jpg>
-Dylan Thomas - <https://pixabay.com/photos/dylan-thomas-house-writing-poetry-2541797/>
-Eisteddfod - <https://www.shutterstock.com/image-photo/cardiff-wales-august-2018-national-eisteddfod-1148093045>
-Hay On Wye - <https://www.hayfestival.com/wales/press-images>
-Cardiff Castle - <https://www.pxfuel.com/en/free-photo-oqdcv>
+**#### CULTURE**  
+Folklore - <https://www.worldhistory.org/Cernunnos/>  
+Welsh Flag Image - Taken by myself at YesCymru Independence March, Swansea. Feel free to use it. Link appreciated.  
+Welsh Cakes - <https://www.shutterstock.com/image-photo/homemade-welsh-cakes-raisins-milk-close-449061619>  
+St David's Day - <https://commons.wikimedia.org/wiki/File:St._David%27s_Day_parade>,_Cardiff_-_geograph.org.uk_-_3867279.jpg>  
+Rugby - <https://commons.wikimedia.org/wiki/File:Rugby_world_cup_2011_wales_fidji_tackle_6_octobre_2011.jpg>  
+Dylan Thomas - <https://pixabay.com/photos/dylan-thomas-house-writing-poetry-2541797/>  
+Eisteddfod - <https://www.shutterstock.com/image-photo/cardiff-wales-august-2018-national-eisteddfod-1148093045>  
+Hay On Wye - <https://www.hayfestival.com/wales/press-images>  
+Cardiff Castle - <https://www.pxfuel.com/en/free-photo-oqdcv>  
 
 **#### HISTORY**
-Goat's Hole - <https://www.gowerholidays.com/things-to-do-see/attractions/paviland-cave/>
-Great Orme - <https://commons.wikimedia.org/wiki/File:Great_Orme_Copper_Mine_-_geograph.org.uk_-_819.jpg>
-Henllys - <https://www.shutterstock.com/image-photo/reconstruction-iron-age-fort-castell-henllys-1121207735>
-Caerleon - <https://commons.wikimedia.org/wiki/File:Caerleon_Roman_Fortress_Baths_20171016_apodyterium.jpg>
-St David's Cathedral - <https://www.visitwales.com/attraction/historic-site/st-davids-cathedral-509444>
-Holyhead Museum - <https://nmmc.co.uk/2017/01/goodbye-to-viking-voyagers/>
-Conwy Castle - <https://www.publicdomainpictures.net/en/view-image.php?image=25764&picture=conwy-castle-wales>
-Sycarth - <https://commons.wikimedia.org/wiki/File:Sycharth_home_of_Owain_Glyndwr>,_Last_Prince_of_Wales_10.jpg
-Big Pit - <https://commons.wikimedia.org/wiki/File:Wales_blaenavon_bigpit.jpg>
-Senedd - <https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Senedd_%2851845859151%29.jpg/1024px-Senedd_%2851845859151%29.jpg>
+Goat's Hole - <https://www.gowerholidays.com/things-to-do-see/attractions/paviland-cave/>  
+Great Orme - <https://commons.wikimedia.org/wiki/File:Great_Orme_Copper_Mine_-_geograph.org.uk_-_819.jpg>  
+Henllys - <https://www.shutterstock.com/image-photo/reconstruction-iron-age-fort-castell-henllys-1121207735>  
+Caerleon - <https://commons.wikimedia.org/wiki/File:Caerleon_Roman_Fortress_Baths_20171016_apodyterium.jpg>  
+St David's Cathedral - <https://www.visitwales.com/attraction/historic-site/st-davids-cathedral-509444>  
+Holyhead Museum - <https://nmmc.co.uk/2017/01/goodbye-to-viking-voyagers/>  
+Conwy Castle - <https://www.publicdomainpictures.net/en/view-image.php?image=25764&picture=conwy-castle-wales>  
+Sycarth - <https://commons.wikimedia.org/wiki/File:Sycharth_home_of_Owain_Glyndwr,_Last_Prince_of_Wales_10.jpg>  
+Big Pit - <https://commons.wikimedia.org/wiki/File:Wales_blaenavon_bigpit.jpg>  
+Senedd - <https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Senedd_%2851845859151%29.jpg/1024px-Senedd_%2851845859151%29.jpg>  
 
-**#### CONTACT PAGE**
-Hero Image - <https://pxhere.com/en/photo/1626925>
+**#### CONTACT PAGE**  
+Hero Image - <https://pxhere.com/en/photo/1626925>  
 
 Thank you to Mike Jones and Gary Davies for checking the facts.
